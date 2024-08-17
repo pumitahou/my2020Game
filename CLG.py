@@ -32,6 +32,7 @@ bigFont = pygame.font.Font('Fonts//animeace2_bld.ttf', 162)
 pygame.display.set_caption('CLG v 0.2.0')
 clock = pygame.time.Clock()
 pygame.mixer.music.play(-1, 0.0)
+
 def callbackDamage(particlemManager : ParticleManager, entityManager : EntityManager):
     if entityManager.getCount() <= 10:
         entityManager.summon_Lana_Mud(
@@ -44,6 +45,7 @@ def callbackDamage(particlemManager : ParticleManager, entityManager : EntityMan
             )
     entityManager.updateEnemys(Resources.positionX,Resources.positionY,particlemManager)
     entityManager.updatePhysics()
+
 def main():
     Init_Menu = True
     particleManager = ParticleManager()
