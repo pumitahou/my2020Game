@@ -57,6 +57,6 @@ class ParticleManager:
                 velocityYangle=random.uniform(minVelocityY, maxVelocityY)
                 theNewParticle = Particle(Life,(posX,posY),(R,G,B),(velocityXangle,velocityYangle),Radius)
                 self.particles.append(theNewParticle)
-
+    
     def getParticles(self):
         return self.particles
